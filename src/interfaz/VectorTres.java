@@ -46,7 +46,6 @@ public class VectorTres extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         txtLD = new javax.swing.JTextField();
@@ -79,10 +78,6 @@ public class VectorTres extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
-        jLabel2.setText("Vector Multifuncional");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, -1, -1));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Vector Dos", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 14), new java.awt.Color(51, 51, 51))); // NOI18N
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -322,10 +317,9 @@ public class VectorTres extends javax.swing.JFrame {
 
         for (int i = 0; i < v2.length; i++) {
             n = (int) (Math.random() * 25 + 1);
-            v1[i] = n;
+            v2[i] = n;
 
-         
-
+       
         }
 
         JOptionPane.showMessageDialog(this, "Vector Llenado Con Exito");
@@ -448,12 +442,13 @@ public class VectorTres extends javax.swing.JFrame {
 
         JOptionPane.showMessageDialog(this, "Vector Llenado Con Exito");
 
-        cmdCrear2.setEnabled(false);
-        cmdLlenadoM2.setEnabled(false);
-        cmdLlenadoA2.setEnabled(false);
-        cmdMostrar2.setEnabled(true);
-        cmdBorrar2.setEnabled(true);
-        txtLD.setEditable(false);
+        cmdCrear1.setEnabled(false);
+        cmdLlenadoM1.setEnabled(false);
+        cmdLlenadoA1.setEnabled(false);
+        cmdMostrar1.setEnabled(true);
+        cmdBorrar1.setEnabled(true);
+        txtLU.setEditable(false);
+        cmdCalcular.setEnabled(true);
     }//GEN-LAST:event_cmdLlenadoA1ActionPerformed
 
     private void cmdBorrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBorrar1ActionPerformed
@@ -533,18 +528,18 @@ public class VectorTres extends javax.swing.JFrame {
         
        
         if (vS.length > v1.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular No Puede Ser Mayor Que las Longitudes De Los Vectores","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
         }
      
         else if (vS.length > v2.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular No Puede Ser Mayor Que las Longitudes De Los Vectores","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
         }
         else if (vR.length > v1.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular No Puede Ser Mayor Que las Longitudes De Los Vectores","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
         }
      
         else if (vR.length > v2.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular No Puede Ser Mayor Que las Longitudes De Los Vectores","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
         }
      
        
@@ -624,7 +619,6 @@ public class VectorTres extends javax.swing.JFrame {
     private javax.swing.JButton cmdLlenadoM2;
     private javax.swing.JButton cmdMostrar1;
     private javax.swing.JButton cmdMostrar2;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel2;
