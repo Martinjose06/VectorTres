@@ -528,19 +528,21 @@ public class VectorTres extends javax.swing.JFrame {
         
        
         if (vS.length > v1.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes, De Lo Contrario Si Son Iguales. \nNo Puedes Poner Un Numero Mayor","ERROR",JOptionPane.ERROR_MESSAGE);
         }
      
         else if (vS.length > v2.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes, De Lo Contrario Si Son Iguales. \nNo Puedes Poner Un Numero Mayor","ERROR",JOptionPane.ERROR_MESSAGE);
         }
         else if (vR.length > v1.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes, De Lo Contrario Si Son Iguales. \nNo Puedes Poner Un Numero Mayor","ERROR",JOptionPane.ERROR_MESSAGE);
         }
      
         else if (vR.length > v2.length) {
-            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El Numero De Elementos A Calcular Solo Puede Ser Menor O Igual Al Numero Menor De Las Longitudes, De Lo Contrario Si Son Iguales. \nNo Puedes Poner Un Numero Mayor","ERROR",JOptionPane.ERROR_MESSAGE);
         }
+        
+       
      
        
         else{
